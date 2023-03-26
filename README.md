@@ -10,7 +10,7 @@ Minkube, kubectl, docker, helm
 - prometheus-kube-state-metrics. <br>
 
 <b>Ответ: Для выполнения данного задания используется: <br>
-  - Minikube с одной нодой
+  - Minikube с одной нодой <br>
 <code> root@helm:/home/odmin/project_helm/prometheus# minikube status
 minikube
 type: Control Plane
@@ -18,8 +18,14 @@ host: Running
 kubelet: Running
 apiserver: Running
 kubeconfig: Configured
- </code>  
-  
+ </code> <br> 
+ - Kubectl  <br>
+  <code> root@helm:/home/odmin/project_helm/prometheus# kubectl version
+WARNING: This version information is deprecated and will be replaced with the output from kubectl version --short.  Use --output=yaml|json to get the full version.
+Client Version: version.Info{Major:"1", Minor:"26", GitVersion:"v1.26.3", GitCommit:"9e644106593f3f4aa98f8a84b23db5fa378900bd", GitTreeState:"clean", BuildDate:"2023-03-15T13:40:17Z", GoVersion:"go1.19.7", Compiler:"gc", Platform:"linux/amd64"}
+Kustomize Version: v4.5.7
+Server Version: version.Info{Major:"1", Minor:"26", GitVersion:"v1.26.1", GitCommit:"8f94681cd294aa8cfd3407b8191f6c70214973a4", GitTreeState:"clean", BuildDate:"2023-01-18T15:51:25Z", GoVersion:"go1.19.5", Compiler:"gc", Platform:"linux/amd64"}
+ </code> <br>
   
   
   
