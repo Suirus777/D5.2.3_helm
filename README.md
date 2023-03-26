@@ -46,25 +46,26 @@ prometheus-server-68f6dcdbb9-dnjnz                  2/2     Running   0         
   <code>
 prometheus-pushgateway:
   enabled: false
-
 prometheus-node-exporter:
   enabled: false
-
 alertmanager:
   enabled: false
-
 prometheus-server:
   enabled: true
-
 prometheus-kube-state-metrics:
   enabled: true
   </code>
-
-
-
+  - Применяем данные настройки с учётом "values.yaml" <br>
+  <code> #helm upgrade --install --namespace prometheus prometheus prometheus-community/prometheus --values values.yaml </code>
+  - Результат: <br>
+  <code> root@helm:/home/odmin/project_helm/prometheus# kubectl get pods -n prometheus
+NAME                                             READY   STATUS    RESTARTS   AGE
+prometheus-kube-state-metrics-7f6769f7c6-bzlth   1/1     Running   0          45m
+prometheus-server-68f6dcdbb9-dnjnz               2/2     Running   0          45m
+  </code>
 </b> 
 
 
 
 
-helm upgrade --install --namespace prometheus prometheus prometheus-community/prometheus --values /home/odmin/project_helm/prometheus/values.yaml
+
