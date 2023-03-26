@@ -51,9 +51,9 @@ alertmanager:
 prometheus-server:
   enabled: true
 prometheus-kube-state-metrics:
-  enabled: true  </code>
+  enabled: true  </code> <br>
   - Применяем данные настройки с учётом "values.yaml" <br>
-  <code> #helm upgrade --install --namespace prometheus prometheus prometheus-community/prometheus --values values.yaml </code>
+  <code> #helm upgrade --install --namespace prometheus prometheus prometheus-community/prometheus --values values.yaml </code><br>
   - Результат: <br>
   <code> root@helm:/home/odmin/project_helm/prometheus# kubectl get pods -n prometheus
 NAME                                             READY   STATUS    RESTARTS   AGE
