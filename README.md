@@ -55,7 +55,7 @@ prometheus-kube-state-metrics:
   Ссылка на файл: https://github.com/Suirus777/D5.2.3_helm/blob/main/values.yaml <br>
   - Применяем данные настройки с учётом "values.yaml" <br>
   <code> #helm upgrade --install --namespace prometheus prometheus prometheus-community/prometheus --values values.yaml </code><br>
-  - Результат: <br>
+  - Результат, благодаря использованию "values.yaml" удалось запустить только следующие сервисы: <br> <br>
   <code> root@helm:/home/odmin/project_helm/prometheus# kubectl get pods -n prometheus
 NAME                                             READY   STATUS    RESTARTS   AGE
 prometheus-kube-state-metrics-7f6769f7c6-bzlth   1/1     Running   0          45m
