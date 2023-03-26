@@ -40,8 +40,7 @@ prometheus-alertmanager-0                           1/1     Running   0         
 prometheus-kube-state-metrics-7f6769f7c6-bzlth      1/1     Running   0          36m
 prometheus-prometheus-node-exporter-w99h5           1/1     Running   0          26s
 prometheus-prometheus-pushgateway-684dc6674-74ngj   1/1     Running   0          26s
-prometheus-server-68f6dcdbb9-dnjnz                  2/2     Running   0          36m
-</code>
+prometheus-server-68f6dcdbb9-dnjnz                  2/2     Running   0          36m </code>
   - Следующим этапом был создан "values.yaml" с следующими настройками: <br>
   <code>
 prometheus-pushgateway:
