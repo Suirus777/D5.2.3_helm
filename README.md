@@ -26,10 +26,29 @@ Client Version: version.Info{Major:"1", Minor:"26", GitVersion:"v1.26.3", GitCom
 Kustomize Version: v4.5.7
 Server Version: version.Info{Major:"1", Minor:"26", GitVersion:"v1.26.1", GitCommit:"8f94681cd294aa8cfd3407b8191f6c70214973a4", GitTreeState:"clean", BuildDate:"2023-01-18T15:51:25Z", GoVersion:"go1.19.5", Compiler:"gc", Platform:"linux/amd64"}
  </code> <br>
+  - Helm 3 <br>
+  <code> root@helm:/home/odmin/project_helm/prometheus# helm version
+version.BuildInfo{Version:"v3.11.2", GitCommit:"912ebc1cd10d38d340f048efaf0abda047c3468e", GitTreeState:"clean", GoVersion:"go1.18.10"}
+  </code><br>
+  <br>
+  - Далее был создан namespace Prometheus <br>
+  <code> #kubectl create ns prometheus </code> <br>
+  - Далее задеплоен prometheus в Minikube <br>
+  <code> #helm upgrade --install -n prometheus prometheus prometheus-community/prometheus  
+  root@helm:/home/odmin/project_helm/prometheus# kubectl get pods -n prometheus
+NAME                                                READY   STATUS    RESTARTS   AGE
+prometheus-alertmanager-0                           1/1     Running   0          26s
+prometheus-kube-state-metrics-7f6769f7c6-bzlth      1/1     Running   0          36m
+prometheus-prometheus-node-exporter-w99h5           1/1     Running   0          26s
+prometheus-prometheus-pushgateway-684dc6674-74ngj   1/1     Running   0          26s
+prometheus-server-68f6dcdbb9-dnjnz                  2/2     Running   0          36m
+</code> <br>
   
-  
-  
-  Был создан "values.yaml" где </b> 
+  - Был создан "values.yaml" с  
+
+
+
+</b> 
 
 
 
