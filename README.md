@@ -52,6 +52,7 @@ prometheus-server:
   enabled: true
 prometheus-kube-state-metrics:
   enabled: true  </code> <br>
+  Ссылка на файл: https://github.com/Suirus777/D5.2.3_helm/blob/main/values.yaml <br>
   - Применяем данные настройки с учётом "values.yaml" <br>
   <code> #helm upgrade --install --namespace prometheus prometheus prometheus-community/prometheus --values values.yaml </code><br>
   - Результат: <br>
