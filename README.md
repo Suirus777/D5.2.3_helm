@@ -61,8 +61,7 @@ NAME                                             READY   STATUS    RESTARTS   AG
 prometheus-kube-state-metrics-7f6769f7c6-bzlth   1/1     Running   0          45m
 prometheus-server-68f6dcdbb9-dnjnz               2/2     Running   0          45m   </code>
 <br>
-<img src=https://github.com/Suirus777/D5.2.3_helm/blob/main/Helm.JPG>
-</b> 
+<img src=https://github.com/Suirus777/D5.2.3_helm/blob/main/Helm.JPG></b> 
 
 
 
